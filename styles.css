@@ -62,8 +62,10 @@ span{
 h2{
     font-size: 2.5em;
     text-decoration: underline;
-    margin:  auto;
     color: #0e3244;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .grid{
         display: grid;
@@ -71,5 +73,20 @@ h2{
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 20px;
 
+    
 }
+.btn{
+    display: flex;
+    align-items: center;
+    background-color: #0e3244;
+    padding: 10px;
+    font-size:1.3em;
+    font-weight: 600;
+    color: aqua;
+}
+.btn:hover{
+background-color: white;
+cursor: pointer;
+}
+
 
