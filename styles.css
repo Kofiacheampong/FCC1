@@ -2,91 +2,131 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'hk grotesk','montserrat', sans-serif;
 }
+
+@media screen and (max-width: 480px) {
+    html, body {
+      min-width: 320px; } 
+    }
+
 a, li{
     list-style: none;
     text-decoration: none;
+    
 }
+
 a:hover{
-    color: red;
+    color:#3e4647;
+
 }
-#navbar, .nav-links {
-display: flex;
-justify-content: justify-content;
+
+nav {
 padding: 20px;
 background-color: #0e3244;
-position: sticky;
-
+position: fixed;
+top: 0%;
+width: 100%;
+z-index: 1;
 
 }
-
+#navbar{
+display: flex;
+justify-content:right;
+}
 .navlink{
-    color: white;
-    font-size: 1em;
-    font-weight: 400;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+color:  #e4dcd0;
+font-size: 1.2em;
+font-weight: 400;
+margin: 20px;
 
-}
-
+  
+ }
 #welcome-section{
   
     position:relative;
       background-color:#0e3244;
       width:100vw;
       height:100vh;
-      margin-bottom: 7%;
+    
     }
 #welcome-section{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
     h1{
         font-size:6em;
-        color:white
+        color: #e4dcd0;
       }
 span{
     font-size: 1.1em;
-    color: white;
+    color:  #e4dcd0;
     display: flex;
     justify-content: center;
 }
 #projects{
     width: 100vw;
     height: 100vh;
+    background-color: #e4dcd0;
+    color: #0e3244;
+    text-align: center;
+
 }
+
 h2{
     font-size: 2.5em;
     text-decoration: underline;
-    color: #0e3244;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 20px;
+        
+}
 
+.project-tile{
+    display:flex ;
+    justify-content: center;
+     
     
 }
 .btn{
     display: flex;
-    align-items: center;
+    justify-content: center;
     background-color: #0e3244;
     padding: 10px;
     font-size:1.3em;
     font-weight: 600;
     color: aqua;
+    border: none;
 }
 .btn:hover{
-background-color: white;
+background-color:#3e4647;
 cursor: pointer;
 }
+#contact{
+    color: #e4dcd0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0e3244;
+    text-align: center;
 
+}
 
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #e4dcd0;
+    padding: 20px;
+    font-weight: 500;
+    color:#0e3244;
+}
