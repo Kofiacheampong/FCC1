@@ -21,57 +21,56 @@ a:hover{
 
 }
 
-nav {
-padding: 20px;
-background-color: #0e3244;
+
+#navbar{
+display: flex;
+justify-content:right;
 position: fixed;
 top: 0%;
 width: 100%;
 z-index: 1;
+padding: 20px;
+background-color: #0e3244;
+}
 
-}
-#navbar{
-display: flex;
-justify-content:right;
-}
 .navlink{
 color:  #e4dcd0;
 font-size: 1.2em;
 font-weight: 400;
 margin: 20px;
-
-  
  }
+
 #welcome-section{
-  
     position:relative;
       background-color:#0e3244;
       width:100vw;
       height:100vh;
-    
     }
+
 #welcome-section{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-    h1{
-        font-size:6em;
+
+h1{
+        font-size:5em;
         color: #e4dcd0;
-      }
+}
+
 span{
-    font-size: 1.1em;
+    font-size: 1.3em;
     color:  #e4dcd0;
     display: flex;
     justify-content: center;
 }
+
 #projects{
     width: 100vw;
     height: 100vh;
     background-color: #e4dcd0;
     color: #0e3244;
     text-align: center;
-
 }
 
 h2{
@@ -79,8 +78,7 @@ h2{
     text-decoration: underline;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    text-align: center;
+    text-align: center;   
 }
 .grid{
         display: grid;
@@ -96,19 +94,41 @@ h2{
      
     
 }
+.project-title{
+    color:#e4dcd0 ;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin: 20px;
+    background-color: #0e3244;
+    padding: 20px;
+}
+.project-title:hover{
+color: #e4dcd0;
+font-size: 120%;
+}
+.project-title:hover::after{
+    content: "/>";
+}
+.project-title:hover::before{
+    content: "<";
+}
 .btn{
     display: flex;
-    justify-content: center;
+    align-items: center;
     background-color: #0e3244;
     padding: 10px;
     font-size:1.3em;
-    font-weight: 600;
     color: aqua;
     border: none;
+    text-transform: uppercase;
+   
 }
 .btn:hover{
-background-color:#3e4647;
+background-color:;
 cursor: pointer;
+}
+.btn:hover::after{
+    content:  ">";
 }
 #contact{
     color: #e4dcd0;
@@ -116,17 +136,29 @@ cursor: pointer;
     width: 100vw;
     background-color: #0e3244;
     text-align: center;
+    align-content: center;
+
 
 }
 
 .icons{
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
-
+.icon{
+    color: #e4dcd0;
+    margin: 5px;
+    text-transform: uppercase;
+    
+}
 footer{
     background-color: #e4dcd0;
     padding: 20px;
     font-weight: 500;
     color:#0e3244;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
 }
