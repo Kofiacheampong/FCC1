@@ -14,31 +14,27 @@ html {
   font-size: 62.5%;
 }
 /* 1200px / 16px = 75em */
+/* Media queries for font size adjustments */
 @media (max-width: 75em) {
-    html {
-      font-size: 80%;
-    }
+  html {
+    font-size: 80%;
   }
-  
-  /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
-    html {
-      font-size: 58%;
-    }
+}
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
   }
-  
-  /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
   }
-
+}
 
   
 a{
     text-decoration: none;
-    color: #e4dcd0;
+    color: white;
     
 }
 li{
@@ -49,6 +45,9 @@ h1{
     font-size:6rem;
     color: #e4dcd0;
 }
+span{
+  font-size: 3rem;
+}
 h2{
 font-size: 5rem;
 
@@ -58,57 +57,71 @@ img{
   width: 100%;
 }
 
-#navbar{
-display: flex;
-justify-content:flex-end;
-position: fixed;
-top: 0%;
-width: 100%;
-z-index: 10;
-padding: 20px;
-background-color: #0e3244;
+/* ... (previous styles remain the same) ... */
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 20px;
+  background-color: #0e3244;
 }
 
-.navlink{
-color:  #e4dcd0;
-font-size: 2rem;
-font-weight: 400;
-margin: 20px;
- }
-
-@media (max-width: 28.75em) {
-    html {
-      justify-content: center; 
-    }
-    
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#welcome-section{
-      background-color:#0e3244;
-      width:100vw;
-      height:100vh;
-    }
-
-
-@media (max-width: 480px) {
-    #welcome-section {
-      justify-content: center;
-    
-    }
+nav li {
+  margin: 0 15px;
 }
 
-#welcome-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+/* Style the social media icons */
+nav a {
+  color: #e4dcd0;
+  font-size: 2rem;
+  transition: transform 0.3s ease-out;
 }
 
-span{
-    font-size: 2rem;
-    color:  #e4dcd0;
-    display: flex;
-    justify-content: center;
+nav a:hover {
+  transform: translateY(-2px);
+}
+
+
+#welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e3244;
+  height: 100vh;
+  padding: 0 10%;
+}
+.welcome-content {
+  flex: 1;
+  padding-right: 2rem; /* Add some spacing between text and image */
+}
+
+.image-container {
+  flex: 1;
+}
+
+
+.landing-page-image {
+  width: 50%;
+  height: auto;
+  max-width: 50%;
+}
+
+span {
+  font-size: 2rem;
+  color: #e4dcd0;
 }
 
 #projects{
